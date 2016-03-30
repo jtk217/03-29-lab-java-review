@@ -8,8 +8,12 @@ import java.util.*;
 public class Tester {
 
 	public static void main(String[] args){
-		Dog dog = new Dog();
-		dog.bark();
-		dog.walk();
+		Husky husky = new Husky("Butts");
+		husky.bark();
+
+		husky.speak();
+
+		GiftBox<Husky> gbh = new GiftBox<Husky>(husky);
+		gbh.openGift();
 	}
 }
